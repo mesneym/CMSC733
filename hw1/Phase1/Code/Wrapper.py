@@ -149,7 +149,6 @@ def ransacHomography(P,threshold,iterations,acc):
             if(len(inliers)>acc*len(P)): break
     
     if(len(bestinliers)<5):
-        print(len(bestinliers))
         return None,None,False
 
     bestPairs = [P[i] for i in bestinliers]
