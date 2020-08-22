@@ -213,7 +213,7 @@ def main():
       stitchedImg = []
       
       for s in range(3):
-          path = './results/set' + str(s) +'/'
+          path = './results/set' + str(s+1) +'/'
 
           for i in range(0,len(imgSet[s])-1):
               if(i==0):img1 = cv2.resize(imgSet[s][i],(500,500))
